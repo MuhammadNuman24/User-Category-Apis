@@ -2,10 +2,13 @@ package com.example.demo;
 
 public class CategoryModel {
     public Long webId;
+    private String categoryNumber;
     public String category;
     public String subCategory;
-    public CategoryModel(Long webId, String category, String subCategory) {
+
+    public CategoryModel(Long webId, String categoryNumber, String category, String subCategory) {
         this.webId = webId;
+        this.categoryNumber = categoryNumber;
         this.category = category;
         this.subCategory = subCategory;
     }
@@ -16,6 +19,14 @@ public class CategoryModel {
 
     public void setWebId(Long webId) {
         this.webId = webId;
+    }
+
+    public String getCategoryNumber() {
+        return categoryNumber;
+    }
+
+    public void setCategoryNumber(String categoryNumber) {
+        this.categoryNumber = categoryNumber;
     }
 
     public String getCategory() {
