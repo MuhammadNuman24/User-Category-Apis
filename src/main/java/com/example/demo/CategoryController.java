@@ -18,7 +18,7 @@ public class CategoryController {
     }
 
     @GetMapping("/{id}")
-    public CategoryModel getModel(@PathVariable("id") long webId) {
+    public CategoryModel getModel(@PathVariable("id") long webId){
         return new CategoryModel(webId,"98098","TEST CATEGORY","TEST SUB CATEGORY");
     }
 

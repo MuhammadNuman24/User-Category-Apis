@@ -14,7 +14,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
-    public UserModel postString(@RequestBody UserModel model) {
+    public UserModel postString(@RequestBody UserModel model){
         return model;
     }
 
